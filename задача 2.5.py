@@ -91,13 +91,14 @@ print("Максимальная цифра в числе:", poisk_chisla )
 print('задача № 9 - Конец')
 
 print('задача № 10 Найти количество цифр 5 в числе')
-chislo = int(input())
-chislo = chislo%10
-chislo=chislo//10
-while chislo>0 :
-    if chislo%10 > poisk_chisla:
-        print("Дошел", poisk_chisla )
-        poisk_chisla = chislo % 10
-    chislo = chislo // 10
-print("Максимальная цифра в числе:", poisk_chisla )
+t1=0
+print("Введите число")
+chislo1 = int(input())
+while chislo1 > 0:
+        if chislo1% 10 == 5:
+           t1 = t1+1
+        chislo1 = chislo1 // 10
+if t1 == 0 :
+         print('пятерок нет')
+print("всего пятерок", t1)
 print('задача № 10 - Конец')
